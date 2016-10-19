@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62C8FB2F1DB79A480066C006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FB2E1DB79A480066C006 /* AppDelegate.swift */; };
+		62C8FB311DB79A480066C006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FB301DB79A480066C006 /* ViewController.swift */; };
+		62C8FB341DB79A480066C006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C8FB321DB79A480066C006 /* Main.storyboard */; };
+		62C8FB361DB79A480066C006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C8FB351DB79A480066C006 /* Assets.xcassets */; };
+		62C8FB391DB79A480066C006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C8FB371DB79A480066C006 /* LaunchScreen.storyboard */; };
+		62C8FB441DB79A480066C006 /* KeyboardAvoidanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FB431DB79A480066C006 /* KeyboardAvoidanceTests.swift */; };
+		62C8FB4F1DB79A480066C006 /* KeyboardAvoidanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FB4E1DB79A480066C006 /* KeyboardAvoidanceUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62C8FB401DB79A480066C006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62C8FB231DB79A480066C006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62C8FB2A1DB79A480066C006;
+			remoteInfo = KeyboardAvoidance;
+		};
+		62C8FB4B1DB79A480066C006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62C8FB231DB79A480066C006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62C8FB2A1DB79A480066C006;
+			remoteInfo = KeyboardAvoidance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62C8FB2B1DB79A480066C006 /* KeyboardAvoidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardAvoidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C8FB2E1DB79A480066C006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62C8FB301DB79A480066C006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62C8FB331DB79A480066C006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62C8FB351DB79A480066C006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62C8FB381DB79A480066C006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62C8FB3A1DB79A480066C006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C8FB3F1DB79A480066C006 /* KeyboardAvoidanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardAvoidanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C8FB431DB79A480066C006 /* KeyboardAvoidanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidanceTests.swift; sourceTree = "<group>"; };
+		62C8FB451DB79A480066C006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C8FB4A1DB79A480066C006 /* KeyboardAvoidanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardAvoidanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C8FB4E1DB79A480066C006 /* KeyboardAvoidanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidanceUITests.swift; sourceTree = "<group>"; };
+		62C8FB501DB79A480066C006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62C8FB281DB79A480066C006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C8FB3C1DB79A480066C006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C8FB471DB79A480066C006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62C8FB221DB79A480066C006 = {
+			isa = PBXGroup;
+			children = (
+				62C8FB2D1DB79A480066C006 /* KeyboardAvoidance */,
+				62C8FB421DB79A480066C006 /* KeyboardAvoidanceTests */,
+				62C8FB4D1DB79A480066C006 /* KeyboardAvoidanceUITests */,
+				62C8FB2C1DB79A480066C006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62C8FB2C1DB79A480066C006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62C8FB2B1DB79A480066C006 /* KeyboardAvoidance.app */,
+				62C8FB3F1DB79A480066C006 /* KeyboardAvoidanceTests.xctest */,
+				62C8FB4A1DB79A480066C006 /* KeyboardAvoidanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62C8FB2D1DB79A480066C006 /* KeyboardAvoidance */ = {
+			isa = PBXGroup;
+			children = (
+				62C8FB2E1DB79A480066C006 /* AppDelegate.swift */,
+				62C8FB301DB79A480066C006 /* ViewController.swift */,
+				62C8FB321DB79A480066C006 /* Main.storyboard */,
+				62C8FB351DB79A480066C006 /* Assets.xcassets */,
+				62C8FB371DB79A480066C006 /* LaunchScreen.storyboard */,
+				62C8FB3A1DB79A480066C006 /* Info.plist */,
+			);
+			path = KeyboardAvoidance;
+			sourceTree = "<group>";
+		};
+		62C8FB421DB79A480066C006 /* KeyboardAvoidanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				62C8FB431DB79A480066C006 /* KeyboardAvoidanceTests.swift */,
+				62C8FB451DB79A480066C006 /* Info.plist */,
+			);
+			path = KeyboardAvoidanceTests;
+			sourceTree = "<group>";
+		};
+		62C8FB4D1DB79A480066C006 /* KeyboardAvoidanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62C8FB4E1DB79A480066C006 /* KeyboardAvoidanceUITests.swift */,
+				62C8FB501DB79A480066C006 /* Info.plist */,
+			);
+			path = KeyboardAvoidanceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62C8FB2A1DB79A480066C006 /* KeyboardAvoidance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62C8FB531DB79A480066C006 /* Build configuration list for PBXNativeTarget "KeyboardAvoidance" */;
+			buildPhases = (
+				62C8FB271DB79A480066C006 /* Sources */,
+				62C8FB281DB79A480066C006 /* Frameworks */,
+				62C8FB291DB79A480066C006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardAvoidance;
+			productName = KeyboardAvoidance;
+			productReference = 62C8FB2B1DB79A480066C006 /* KeyboardAvoidance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62C8FB3E1DB79A480066C006 /* KeyboardAvoidanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62C8FB561DB79A480066C006 /* Build configuration list for PBXNativeTarget "KeyboardAvoidanceTests" */;
+			buildPhases = (
+				62C8FB3B1DB79A480066C006 /* Sources */,
+				62C8FB3C1DB79A480066C006 /* Frameworks */,
+				62C8FB3D1DB79A480066C006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62C8FB411DB79A480066C006 /* PBXTargetDependency */,
+			);
+			name = KeyboardAvoidanceTests;
+			productName = KeyboardAvoidanceTests;
+			productReference = 62C8FB3F1DB79A480066C006 /* KeyboardAvoidanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62C8FB491DB79A480066C006 /* KeyboardAvoidanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62C8FB591DB79A480066C006 /* Build configuration list for PBXNativeTarget "KeyboardAvoidanceUITests" */;
+			buildPhases = (
+				62C8FB461DB79A480066C006 /* Sources */,
+				62C8FB471DB79A480066C006 /* Frameworks */,
+				62C8FB481DB79A480066C006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62C8FB4C1DB79A480066C006 /* PBXTargetDependency */,
+			);
+			name = KeyboardAvoidanceUITests;
+			productName = KeyboardAvoidanceUITests;
+			productReference = 62C8FB4A1DB79A480066C006 /* KeyboardAvoidanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62C8FB231DB79A480066C006 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Radu Costea";
+				TargetAttributes = {
+					62C8FB2A1DB79A480066C006 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					62C8FB3E1DB79A480066C006 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 62C8FB2A1DB79A480066C006;
+					};
+					62C8FB491DB79A480066C006 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 62C8FB2A1DB79A480066C006;
+					};
+				};
+			};
+			buildConfigurationList = 62C8FB261DB79A480066C006 /* Build configuration list for PBXProject "KeyboardAvoidance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62C8FB221DB79A480066C006;
+			productRefGroup = 62C8FB2C1DB79A480066C006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62C8FB2A1DB79A480066C006 /* KeyboardAvoidance */,
+				62C8FB3E1DB79A480066C006 /* KeyboardAvoidanceTests */,
+				62C8FB491DB79A480066C006 /* KeyboardAvoidanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62C8FB291DB79A480066C006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C8FB391DB79A480066C006 /* LaunchScreen.storyboard in Resources */,
+				62C8FB361DB79A480066C006 /* Assets.xcassets in Resources */,
+				62C8FB341DB79A480066C006 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C8FB3D1DB79A480066C006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C8FB481DB79A480066C006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62C8FB271DB79A480066C006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C8FB311DB79A480066C006 /* ViewController.swift in Sources */,
+				62C8FB2F1DB79A480066C006 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C8FB3B1DB79A480066C006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C8FB441DB79A480066C006 /* KeyboardAvoidanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C8FB461DB79A480066C006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C8FB4F1DB79A480066C006 /* KeyboardAvoidanceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62C8FB411DB79A480066C006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62C8FB2A1DB79A480066C006 /* KeyboardAvoidance */;
+			targetProxy = 62C8FB401DB79A480066C006 /* PBXContainerItemProxy */;
+		};
+		62C8FB4C1DB79A480066C006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62C8FB2A1DB79A480066C006 /* KeyboardAvoidance */;
+			targetProxy = 62C8FB4B1DB79A480066C006 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62C8FB321DB79A480066C006 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62C8FB331DB79A480066C006 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62C8FB371DB79A480066C006 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62C8FB381DB79A480066C006 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62C8FB511DB79A480066C006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62C8FB521DB79A480066C006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62C8FB541DB79A480066C006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KeyboardAvoidance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RC.KeyboardAvoidance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		62C8FB551DB79A480066C006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KeyboardAvoidance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RC.KeyboardAvoidance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		62C8FB571DB79A480066C006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KeyboardAvoidanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RC.KeyboardAvoidanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyboardAvoidance.app/KeyboardAvoidance";
+			};
+			name = Debug;
+		};
+		62C8FB581DB79A480066C006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KeyboardAvoidanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RC.KeyboardAvoidanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyboardAvoidance.app/KeyboardAvoidance";
+			};
+			name = Release;
+		};
+		62C8FB5A1DB79A480066C006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KeyboardAvoidanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RC.KeyboardAvoidanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KeyboardAvoidance;
+			};
+			name = Debug;
+		};
+		62C8FB5B1DB79A480066C006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KeyboardAvoidanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RC.KeyboardAvoidanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KeyboardAvoidance;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62C8FB261DB79A480066C006 /* Build configuration list for PBXProject "KeyboardAvoidance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C8FB511DB79A480066C006 /* Debug */,
+				62C8FB521DB79A480066C006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62C8FB531DB79A480066C006 /* Build configuration list for PBXNativeTarget "KeyboardAvoidance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C8FB541DB79A480066C006 /* Debug */,
+				62C8FB551DB79A480066C006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		62C8FB561DB79A480066C006 /* Build configuration list for PBXNativeTarget "KeyboardAvoidanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C8FB571DB79A480066C006 /* Debug */,
+				62C8FB581DB79A480066C006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		62C8FB591DB79A480066C006 /* Build configuration list for PBXNativeTarget "KeyboardAvoidanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C8FB5A1DB79A480066C006 /* Debug */,
+				62C8FB5B1DB79A480066C006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62C8FB231DB79A480066C006 /* Project object */;
+}
