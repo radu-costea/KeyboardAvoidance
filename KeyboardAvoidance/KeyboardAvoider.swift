@@ -16,7 +16,6 @@ import UIKit
     var insets: UIEdgeInsets { get set }
 }
 
-
 /// Keyboard avoider - object that is responsbile for making sure that the insets of a Container avoid keyboard
 public class KeyboardAvoider: NSObject {
     
@@ -25,7 +24,6 @@ public class KeyboardAvoider: NSObject {
     
     /// The keyboard subscriber used for observing keyboard events
     public var keyboardSubscriber: KeyboardSubscriber
-    
     
     /// The last inset adjustment in order to avoid keyboard
     public var overlapHeight: CGFloat = 0.0 {
@@ -41,7 +39,6 @@ public class KeyboardAvoider: NSObject {
         }
     }
     
-    
     /// Creates a new keyboard avoider
     ///
     /// - parameter keyboardSubscriber: The keyboard subscriber to use for monitoring keyboard state
@@ -55,7 +52,7 @@ public class KeyboardAvoider: NSObject {
     
     /// Starts monitoring the keyboard and ajust the insets of the container accordingly
     public func startSubscribing() -> Void {
-        keyboardSubscriber.subscribeToKeyboardEvents(options: .KeyboardWillChangeFrame) { [unowned self] (info) in
+        keyboardSubscriber.subscribeToKeyboardEvents(options: .willChangeFrame) { [unowned self] (info) in
             let rect = self.container.convertRect(info.finalFrame, fromView: nil)
             let intersection = self.container.bounds.intersection(rect)
             let option = UIViewAnimationOptions(info.animationCurve)
@@ -68,7 +65,6 @@ public class KeyboardAvoider: NSObject {
             }, completion: nil)
         }
     }
-    
     
     /// Stops monitoring keyboard events
     public func stopSubscribing() -> Void {

@@ -1,15 +1,15 @@
 //
-//  KeyboardAvoidingKitTests.swift
-//  KeyboardAvoidingKitTests
+//  KeyboardAvoidanceKitTests.swift
+//  KeyboardAvoidanceKitTests
 //
 //  Created by Radu Costea on 10/21/16.
 //  Copyright © 2016 Radu Costea. All rights reserved.
 //
 
 import XCTest
-@testable import KeyboardAvoidingKit
+@testable import KeyboardAvoidanceKit
 
-class KeyboardAvoidingKitTests: XCTestCase {
+class KeyboardAvoidanceKitTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

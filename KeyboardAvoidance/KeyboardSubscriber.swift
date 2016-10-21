@@ -9,33 +9,36 @@
 import UIKit
 import CoreGraphics
 
-public struct KeyboardEventOptions: OptionSet {
-    public var rawValue: Int
-    public init(rawValue: Int) {
-        self.rawValue = rawValue
-    }
-    
-    public static var KeyboardWillChangeFrame = KeyboardEventOptions(rawValue: 1 << 0)
-    public static var KeyboardDidChangeFrame = KeyboardEventOptions(rawValue: 1 << 1)
-    public static var KeyboardWillShow = KeyboardEventOptions(rawValue: 1 << 2)
-    public static var KeyboardDidShow = KeyboardEventOptions(rawValue: 1 << 3)
-    public static var KeyboardWillHide = KeyboardEventOptions(rawValue: 1 << 4)
-    public static var KeyboardDidHide = KeyboardEventOptions(rawValue: 1 << 5)
-}
+//
+// Declared in objective-c for compatibility to objc, and for embedding it in a framework
+//
+//public struct KeyboardEventOptions: OptionSet {
+//    public var rawValue: Int
+//    public init(rawValue: Int) {
+//        self.rawValue = rawValue
+//    }
+//    
+//    public static var KeyboardWillChangeFrame = KeyboardEventOptions(rawValue: 1 << 0)
+//    public static var KeyboardDidChangeFrame = KeyboardEventOptions(rawValue: 1 << 1)
+//    public static var KeyboardWillShow = KeyboardEventOptions(rawValue: 1 << 2)
+//    public static var KeyboardDidShow = KeyboardEventOptions(rawValue: 1 << 3)
+//    public static var KeyboardWillHide = KeyboardEventOptions(rawValue: 1 << 4)
+//    public static var KeyboardDidHide = KeyboardEventOptions(rawValue: 1 << 5)
+//}
 
 extension KeyboardEventOptions: Hashable {
-    public var hashValue: Int { return rawValue }
+    public var hashValue: Int { return Int(rawValue) }
 }
 
 extension KeyboardEventOptions {
     func corespondingNotifications() -> [(option: KeyboardEventOptions, notification: Notification.Name)] {
         let pairing: [KeyboardEventOptions : Notification.Name] = [
-            .KeyboardWillChangeFrame: .UIKeyboardWillChangeFrame,
-            .KeyboardDidChangeFrame: .UIKeyboardDidChangeFrame,
-            .KeyboardWillShow: .UIKeyboardWillShow,
-            .KeyboardDidShow: .UIKeyboardDidShow,
-            .KeyboardWillHide: .UIKeyboardWillHide,
-            .KeyboardDidHide: .UIKeyboardDidHide,
+            .willChangeFrame: .UIKeyboardWillChangeFrame,
+            .didChangeFrame: .UIKeyboardDidChangeFrame,
+            .willShow: .UIKeyboardWillShow,
+            .didShow: .UIKeyboardDidShow,
+            .willHide: .UIKeyboardWillHide,
+            .didHide: .UIKeyboardDidHide,
         ]
         let selected = pairing.filter{ self.contains($0.key) }
         return selected.map{ (option: $0.key, notification: $0.value )}
