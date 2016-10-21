@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "62C8FB2A1DB79A480066C006"
+               BuildableName = "KeyboardAvoidance.app"
+               BlueprintName = "KeyboardAvoidance"
+               ReferencedContainer = "container:KeyboardAvoidance.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,56 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "62C8FB3E1DB79A480066C006"
+               BuildableName = "KeyboardAvoidanceTests.xctest"
+               BlueprintName = "KeyboardAvoidanceTests"
+               ReferencedContainer = "container:KeyboardAvoidance.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "62C8FB491DB79A480066C006"
+               BuildableName = "KeyboardAvoidanceUITests.xctest"
+               BlueprintName = "KeyboardAvoidanceUITests"
+               ReferencedContainer = "container:KeyboardAvoidance.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6278BCAB1DBA47620031639A"
+               BuildableName = "KeyboardAvoidingKitTests.xctest"
+               BlueprintName = "KeyboardAvoidingKitTests"
+               ReferencedContainer = "container:KeyboardAvoidance.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6278BCD11DBA597F0031639A"
+               BuildableName = "KeyboardAvoidanceKitTests.xctest"
+               BlueprintName = "KeyboardAvoidanceKitTests"
+               ReferencedContainer = "container:KeyboardAvoidance.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "62C8FB2A1DB79A480066C006"
+            BuildableName = "KeyboardAvoidance.app"
+            BlueprintName = "KeyboardAvoidance"
+            ReferencedContainer = "container:KeyboardAvoidance.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +91,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "62C8FB2A1DB79A480066C006"
+            BuildableName = "KeyboardAvoidance.app"
+            BlueprintName = "KeyboardAvoidance"
+            ReferencedContainer = "container:KeyboardAvoidance.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +110,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "62C8FB2A1DB79A480066C006"
+            BuildableName = "KeyboardAvoidance.app"
+            BlueprintName = "KeyboardAvoidance"
+            ReferencedContainer = "container:KeyboardAvoidance.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
