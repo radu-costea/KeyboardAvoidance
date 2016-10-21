@@ -40,6 +40,13 @@
 			remoteGlobalIDString = 62C8FB2A1DB79A480066C006;
 			remoteInfo = KeyboardAvoidance;
 		};
+		6278BCF61DBA69040031639A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62C8FB231DB79A480066C006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6278BCC91DBA597F0031639A;
+			remoteInfo = KeyboardAvoidanceKit;
+		};
 		62C8FB401DB79A480066C006 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62C8FB231DB79A480066C006 /* Project object */;
@@ -77,7 +84,6 @@
 		6278BCD21DBA597F0031639A /* KeyboardAvoidanceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardAvoidanceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6278BCD91DBA597F0031639A /* KeyboardAvoidanceKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidanceKitTests.swift; sourceTree = "<group>"; };
 		6278BCDB1DBA597F0031639A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6278BCEE1DBA5D620031639A /* KeyboardAvoidance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyboardAvoidance-Bridging-Header.h"; sourceTree = "<group>"; };
 		6278BCEF1DBA5D620031639A /* KeyboardEventOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardEventOptions.h; sourceTree = "<group>"; };
 		62A7994F1DB88DB600AEEA07 /* UIView-Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-Container.swift"; sourceTree = "<group>"; };
 		62C8FB2B1DB79A480066C006 /* KeyboardAvoidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardAvoidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +147,10 @@
 		6278BCCB1DBA597F0031639A /* KeyboardAvoidanceKit */ = {
 			isa = PBXGroup;
 			children = (
+				62A7994F1DB88DB600AEEA07 /* UIView-Container.swift */,
+				62D261D91DB90A7100342BF2 /* KeyboardAvoider.swift */,
+				62C8FB5C1DB79A910066C006 /* KeyboardSubscriber.swift */,
+				6278BCEF1DBA5D620031639A /* KeyboardEventOptions.h */,
 				6278BCCC1DBA597F0031639A /* KeyboardAvoidanceKit.h */,
 				6278BCCD1DBA597F0031639A /* Info.plist */,
 			);
@@ -185,15 +195,10 @@
 			children = (
 				62C8FB2E1DB79A480066C006 /* AppDelegate.swift */,
 				62C8FB301DB79A480066C006 /* ViewController.swift */,
-				62A7994F1DB88DB600AEEA07 /* UIView-Container.swift */,
-				62D261D91DB90A7100342BF2 /* KeyboardAvoider.swift */,
-				62C8FB5C1DB79A910066C006 /* KeyboardSubscriber.swift */,
-				6278BCEF1DBA5D620031639A /* KeyboardEventOptions.h */,
 				62C8FB321DB79A480066C006 /* Main.storyboard */,
 				62C8FB351DB79A480066C006 /* Assets.xcassets */,
 				62C8FB371DB79A480066C006 /* LaunchScreen.storyboard */,
 				62C8FB3A1DB79A480066C006 /* Info.plist */,
-				6278BCEE1DBA5D620031639A /* KeyboardAvoidance-Bridging-Header.h */,
 			);
 			path = KeyboardAvoidance;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6278BCF71DBA69040031639A /* PBXTargetDependency */,
 			);
 			name = KeyboardAvoidance;
 			productName = KeyboardAvoidance;
@@ -480,6 +486,11 @@
 			isa = PBXTargetDependency;
 			target = 62C8FB2A1DB79A480066C006 /* KeyboardAvoidance */;
 			targetProxy = 6278BCD61DBA597F0031639A /* PBXContainerItemProxy */;
+		};
+		6278BCF71DBA69040031639A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6278BCC91DBA597F0031639A /* KeyboardAvoidanceKit */;
+			targetProxy = 6278BCF61DBA69040031639A /* PBXContainerItemProxy */;
 		};
 		62C8FB411DB79A480066C006 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -690,7 +701,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RC.KeyboardAvoidance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "KeyboardAvoidance/KeyboardAvoidance-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -707,7 +717,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RC.KeyboardAvoidance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "KeyboardAvoidance/KeyboardAvoidance-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -776,6 +785,7 @@
 				6278BCE31DBA597F0031639A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6278BCE41DBA597F0031639A /* Build configuration list for PBXNativeTarget "KeyboardAvoidanceKitTests" */ = {
 			isa = XCConfigurationList;
@@ -784,6 +794,7 @@
 				6278BCE61DBA597F0031639A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62C8FB261DB79A480066C006 /* Build configuration list for PBXProject "KeyboardAvoidance" */ = {
 			isa = XCConfigurationList;

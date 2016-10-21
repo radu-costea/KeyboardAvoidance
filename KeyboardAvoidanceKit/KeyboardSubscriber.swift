@@ -18,12 +18,12 @@ import CoreGraphics
 //        self.rawValue = rawValue
 //    }
 //    
-//    public static var KeyboardWillChangeFrame = KeyboardEventOptions(rawValue: 1 << 0)
-//    public static var KeyboardDidChangeFrame = KeyboardEventOptions(rawValue: 1 << 1)
-//    public static var KeyboardWillShow = KeyboardEventOptions(rawValue: 1 << 2)
-//    public static var KeyboardDidShow = KeyboardEventOptions(rawValue: 1 << 3)
-//    public static var KeyboardWillHide = KeyboardEventOptions(rawValue: 1 << 4)
-//    public static var KeyboardDidHide = KeyboardEventOptions(rawValue: 1 << 5)
+//    public static var willChangeFrame = KeyboardEventOptions(rawValue: 1 << 0)
+//    public static var didChangeFrame = KeyboardEventOptions(rawValue: 1 << 1)
+//    public static var willShow = KeyboardEventOptions(rawValue: 1 << 2)
+//    public static var didShow = KeyboardEventOptions(rawValue: 1 << 3)
+//    public static var willHide = KeyboardEventOptions(rawValue: 1 << 4)
+//    public static var didHide = KeyboardEventOptions(rawValue: 1 << 5)
 //}
 
 extension KeyboardEventOptions: Hashable {

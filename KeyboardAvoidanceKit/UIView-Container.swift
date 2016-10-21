@@ -111,6 +111,14 @@ public class KeyboardAvoidingTextView: UITextView, KeyboardAvoidingContainer {
     }
     public lazy var avoider: KeyboardAvoider = self.setupAvoider()
     
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override init(frame: CGRect, textContainer: NSTextContainer?) {
+        super.init(frame: frame, textContainer: textContainer)
+    }
+    
     override public func willMove(toWindow newWindow: UIWindow?) {
         super.willMove(toWindow: newWindow)
         onMove(to: newWindow)

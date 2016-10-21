@@ -10,7 +10,7 @@ import UIKit
 
 
 /// Container that should have its content avoid keyboard
-@objc public protocol Container: NSObjectProtocol {
+public protocol Container: class {
     func convertRect(_ rect: CGRect, fromView: UIView?) -> CGRect
     var bounds: CGRect { get }
     var insets: UIEdgeInsets { get set }
