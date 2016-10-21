@@ -9,19 +9,22 @@
 import UIKit
 import CoreGraphics
 
-struct KeyboardEventOptions: OptionSet {
-    var rawValue: Int
+public struct KeyboardEventOptions: OptionSet {
+    public var rawValue: Int
+    public init(rawValue: Int) {
+        self.rawValue = rawValue
+    }
     
-    static var KeyboardWillChangeFrame = KeyboardEventOptions(rawValue: 1 << 0)
-    static var KeyboardDidChangeFrame = KeyboardEventOptions(rawValue: 1 << 1)
-    static var KeyboardWillShow = KeyboardEventOptions(rawValue: 1 << 2)
-    static var KeyboardDidShow = KeyboardEventOptions(rawValue: 1 << 3)
-    static var KeyboardWillHide = KeyboardEventOptions(rawValue: 1 << 4)
-    static var KeyboardDidHide = KeyboardEventOptions(rawValue: 1 << 5)
+    public static var KeyboardWillChangeFrame = KeyboardEventOptions(rawValue: 1 << 0)
+    public static var KeyboardDidChangeFrame = KeyboardEventOptions(rawValue: 1 << 1)
+    public static var KeyboardWillShow = KeyboardEventOptions(rawValue: 1 << 2)
+    public static var KeyboardDidShow = KeyboardEventOptions(rawValue: 1 << 3)
+    public static var KeyboardWillHide = KeyboardEventOptions(rawValue: 1 << 4)
+    public static var KeyboardDidHide = KeyboardEventOptions(rawValue: 1 << 5)
 }
 
 extension KeyboardEventOptions: Hashable {
-    var hashValue: Int { return rawValue }
+    public var hashValue: Int { return rawValue }
 }
 
 extension KeyboardEventOptions {
@@ -39,14 +42,14 @@ extension KeyboardEventOptions {
     }
 }
 
-struct KeyboardEventInfo {    
-    var eventType: KeyboardEventOptions
-    var initialFrame: CGRect
-    var finalFrame: CGRect
-    var animationCurve: UIViewAnimationCurve
-    var animationDuration: Double
+public class KeyboardEventInfo: NSObject {
+    public var eventType: KeyboardEventOptions
+    public var initialFrame: CGRect
+    public var finalFrame: CGRect
+    public var animationCurve: UIViewAnimationCurve
+    public var animationDuration: Double
     
-    init(info: Dictionary<AnyHashable, Any>?, type: KeyboardEventOptions) {
+    public init(info: Dictionary<AnyHashable, Any>?, type: KeyboardEventOptions) {
         eventType = type
         initialFrame = (info?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue ?? CGRect.zero
         finalFrame = (info?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue ?? CGRect.zero
@@ -56,18 +59,35 @@ struct KeyboardEventInfo {
     }
 }
 
-class KeyboardSubscriber {
-    var keyboardFrame = CGRect.zero
-    private var observers: [NSObjectProtocol] = []
-    private var notificationCenter: NotificationCenter
+public class KeyboardSubscriber: NSObject {
+    /// The current frame of the keyboard in window coordinate space system
+    public var keyboardFrame = CGRect.zero
     
-    init(notificationCenter center: NotificationCenter = NotificationCenter.default) {
+    private var notificationCenter: NotificationCenter
+    private var observers: [NSObjectProtocol] = []
+    
+    /// Creates a keyboard subscriber. This object is responsible for listening to keyboard events 
+    ///
+    /// - parameter center: Notification center used to listen keyboard events
+    ///
+    /// - returns: A newly created KeyboardSubscriber
+    public init(notificationCenter center: NotificationCenter = NotificationCenter.default) {
         notificationCenter = center
     }
     
-    func subscribeToKeyboardEvents(options: KeyboardEventOptions, onEvent: ((KeyboardEventInfo) -> Void)?) {
+    
+    /// Registers to specified keyboard events and calls the onEvent callback when
+    ///
+    /// - parameter options: The events to register for
+    /// - parameter onEvent: The callback to be called when one of the specified events occur
+    public func subscribeToKeyboardEvents(options: KeyboardEventOptions, onEvent: ((KeyboardEventInfo) -> Void)?) {
+        // Prevent from registering multiple times by unregister previous observers
         stopReceivingKeyboardEvents()
+        
+        // Map selected options to corresponding Notification names
         let notifications = options.corespondingNotifications()
+        
+        // Register observers for each notification
         observers = notifications.map{ pair in
             return self.notificationCenter.addObserver(forName: pair.notification, object: nil, queue: nil, using: { notif in
                 let event = KeyboardEventInfo(info: notif.userInfo, type: pair.option)
@@ -76,9 +96,11 @@ class KeyboardSubscriber {
         }
     }
     
-    func stopReceivingKeyboardEvents() -> Void {
-        for observer in observers {
-            notificationCenter.removeObserver(observer)
+    
+    /// Stops listening to keyboard registered events
+    public func stopReceivingKeyboardEvents() -> Void {
+        observers.forEach { [unowned self] in
+            self.notificationCenter.removeObserver($0)
         }
         observers = []
     }
