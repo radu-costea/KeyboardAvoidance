@@ -7,19 +7,18 @@
 //
 
 import UIKit
+import Dispatch
 
 class ViewController: UIViewController {
+    @IBOutlet var contentView: UIView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+    @IBAction func go(_ sender: Any?) {
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func endEditing(_ sender: UIGestureRecognizer?) {
+        self.view.endEditing(true)
+        self.contentView.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
-
-
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62A799501DB88DB600AEEA07 /* UIView-Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A7994F1DB88DB600AEEA07 /* UIView-Container.swift */; };
 		62C8FB2F1DB79A480066C006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FB2E1DB79A480066C006 /* AppDelegate.swift */; };
 		62C8FB311DB79A480066C006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FB301DB79A480066C006 /* ViewController.swift */; };
 		62C8FB341DB79A480066C006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C8FB321DB79A480066C006 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		62C8FB391DB79A480066C006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C8FB371DB79A480066C006 /* LaunchScreen.storyboard */; };
 		62C8FB441DB79A480066C006 /* KeyboardAvoidanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FB431DB79A480066C006 /* KeyboardAvoidanceTests.swift */; };
 		62C8FB4F1DB79A480066C006 /* KeyboardAvoidanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FB4E1DB79A480066C006 /* KeyboardAvoidanceUITests.swift */; };
+		62C8FB5D1DB79A910066C006 /* KeyboardSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8FB5C1DB79A910066C006 /* KeyboardSubscriber.swift */; };
+		62D261DA1DB90A7100342BF2 /* KeyboardAvoider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D261D91DB90A7100342BF2 /* KeyboardAvoider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62A7994F1DB88DB600AEEA07 /* UIView-Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-Container.swift"; sourceTree = "<group>"; };
 		62C8FB2B1DB79A480066C006 /* KeyboardAvoidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardAvoidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C8FB2E1DB79A480066C006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62C8FB301DB79A480066C006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		62C8FB4A1DB79A480066C006 /* KeyboardAvoidanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardAvoidanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C8FB4E1DB79A480066C006 /* KeyboardAvoidanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidanceUITests.swift; sourceTree = "<group>"; };
 		62C8FB501DB79A480066C006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C8FB5C1DB79A910066C006 /* KeyboardSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardSubscriber.swift; sourceTree = "<group>"; };
+		62D261D91DB90A7100342BF2 /* KeyboardAvoider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAvoider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				62C8FB2E1DB79A480066C006 /* AppDelegate.swift */,
 				62C8FB301DB79A480066C006 /* ViewController.swift */,
+				62A7994F1DB88DB600AEEA07 /* UIView-Container.swift */,
+				62D261D91DB90A7100342BF2 /* KeyboardAvoider.swift */,
+				62C8FB5C1DB79A910066C006 /* KeyboardSubscriber.swift */,
 				62C8FB321DB79A480066C006 /* Main.storyboard */,
 				62C8FB351DB79A480066C006 /* Assets.xcassets */,
 				62C8FB371DB79A480066C006 /* LaunchScreen.storyboard */,
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					62C8FB2A1DB79A480066C006 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3WEN3K4CT;
 						ProvisioningStyle = Automatic;
 					};
 					62C8FB3E1DB79A480066C006 = {
@@ -259,8 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D261DA1DB90A7100342BF2 /* KeyboardAvoider.swift in Sources */,
 				62C8FB311DB79A480066C006 /* ViewController.swift in Sources */,
 				62C8FB2F1DB79A480066C006 /* AppDelegate.swift in Sources */,
+				62C8FB5D1DB79A910066C006 /* KeyboardSubscriber.swift in Sources */,
+				62A799501DB88DB600AEEA07 /* UIView-Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3WEN3K4CT;
 				INFOPLIST_FILE = KeyboardAvoidance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RC.KeyboardAvoidance;
@@ -422,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3WEN3K4CT;
 				INFOPLIST_FILE = KeyboardAvoidance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RC.KeyboardAvoidance;
@@ -503,6 +518,7 @@
 				62C8FB551DB79A480066C006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62C8FB561DB79A480066C006 /* Build configuration list for PBXNativeTarget "KeyboardAvoidanceTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +527,7 @@
 				62C8FB581DB79A480066C006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62C8FB591DB79A480066C006 /* Build configuration list for PBXNativeTarget "KeyboardAvoidanceUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +536,7 @@
 				62C8FB5B1DB79A480066C006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
