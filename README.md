@@ -9,11 +9,11 @@ Note that you don't need to add additional constraints or do anything more aside
 
 ## Supported containers:
 
-1. UIView - any content that is placed inside this view will be rearanged if placed correctly. It uses layout margins as the insets, so make sure that the subviews relate to this view margin instead of this view edge. 
+1. `UIView` - any content that is placed inside this view will be rearanged if placed correctly. It uses layout margins as the insets, so make sure that the subviews relate to this view margin instead of this view edge. 
 Also make sure that if you have constrains for vertical align or so you specify them as relative to margin.
 
-2. UIScrollView - the content of this UIScrollView will be scrollable entirely without overlaping with the keyboard. It uses content insets to make sure that content avoids keyboard.
-3. Subclasses of UIScrollView as: UITableView, UICollectionView, UITextView. they work the same as UIScrollView. If you need anything else that is not implemented here you can use the current subclasses as models.
+2. `UIScrollView` - the content of this UIScrollView will be scrollable entirely without overlaping with the keyboard. It uses content insets to make sure that content avoids keyboard.
+3. Subclasses of `UIScrollView` as: `UITableView`, `UICollectionView`, `UITextView`. they work the same as `UIScrollView`. If you need anything else that is not implemented here you can use the current subclasses as models.
 
 ## How to use it?
 
@@ -23,6 +23,6 @@ Note: Make sure that you also specify the correct module for the custom class or
 
 ## Components:
 
-1. KeyboardSubscriber - is a simple object that registers to keyboard events. It can be used to monitor keyboard state, and also it caches the last frame of the keyboard.
-2. KeyboardAvoider - An object that manages a container. It uses a keyboard subscriber to monitor the keyboard state and ajusts the container insets in order to make sure it avoids keyboard
-3. KeyboardAvoidingContainer - It a default implementation for containers that automagically adjust their content in order to avoid keyboard. Use this if you need to implement a custom container.
+1. `KeyboardSubscriber` - is a simple object that registers to keyboard events. It can be used to monitor keyboard state, and also it caches the last frame of the keyboard.
+2. `KeyboardAvoider` - An object that manages a container. It uses a keyboard subscriber to monitor the keyboard state and ajusts the container insets in order to make sure it avoids keyboard
+3. `KeyboardAvoidingContainer` - It a default implementation for containers that automagically adjust their content in order to avoid keyboard. Use this if you need to implement a custom container.
