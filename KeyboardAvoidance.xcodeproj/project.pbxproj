@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		625AA4841DBE52DB0032FBE2 /* KeyboardAvoidingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625AA4831DBE52DB0032FBE2 /* KeyboardAvoidingTableViewController.swift */; };
 		6278BCD31DBA597F0031639A /* KeyboardAvoidanceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6278BCCA1DBA597F0031639A /* KeyboardAvoidanceKit.framework */; };
 		6278BCDA1DBA597F0031639A /* KeyboardAvoidanceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6278BCD91DBA597F0031639A /* KeyboardAvoidanceKitTests.swift */; };
 		6278BCDC1DBA597F0031639A /* KeyboardAvoidanceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6278BCCC1DBA597F0031639A /* KeyboardAvoidanceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -78,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		625AA4831DBE52DB0032FBE2 /* KeyboardAvoidingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidingTableViewController.swift; sourceTree = "<group>"; };
 		6278BCCA1DBA597F0031639A /* KeyboardAvoidanceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyboardAvoidanceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6278BCCC1DBA597F0031639A /* KeyboardAvoidanceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardAvoidanceKit.h; sourceTree = "<group>"; };
 		6278BCCD1DBA597F0031639A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			children = (
 				62C8FB2E1DB79A480066C006 /* AppDelegate.swift */,
 				62C8FB301DB79A480066C006 /* ViewController.swift */,
+				625AA4831DBE52DB0032FBE2 /* KeyboardAvoidingTableViewController.swift */,
 				62C8FB321DB79A480066C006 /* Main.storyboard */,
 				62C8FB351DB79A480066C006 /* Assets.xcassets */,
 				62C8FB371DB79A480066C006 /* LaunchScreen.storyboard */,
@@ -453,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625AA4841DBE52DB0032FBE2 /* KeyboardAvoidingTableViewController.swift in Sources */,
 				62C8FB311DB79A480066C006 /* ViewController.swift in Sources */,
 				62C8FB2F1DB79A480066C006 /* AppDelegate.swift in Sources */,
 			);
