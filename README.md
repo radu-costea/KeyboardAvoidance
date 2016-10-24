@@ -33,10 +33,10 @@ Your custom container should look something like this
 
 ```swift
 /// Subclass to UITextView that automatically adjusts its contentInset to avoid keyboard
-public class <Your class>: <Superclass>, KeyboardAvoidingContainer {
+public class <#Your class#>: <#Superclass#>, KeyboardAvoidingContainer {
     public var insets: UIEdgeInsets {
-        get { return <insets> }
-        set { <insets> = newValue }
+        get { return <#insets#> }
+        set { <#insets#> = newValue }
     }
     public lazy var avoider: KeyboardAvoider = self.setupAvoider()
     
