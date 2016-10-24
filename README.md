@@ -26,3 +26,23 @@ Note: Make sure that you also specify the correct module for the custom class or
 1. `KeyboardSubscriber` - is a simple object that registers to keyboard events. It can be used to monitor keyboard state, and also it caches the last frame of the keyboard.
 2. `KeyboardAvoider` - An object that manages a container. It uses a keyboard subscriber to monitor the keyboard state and ajusts the container insets in order to make sure it avoids keyboard
 3. `KeyboardAvoidingContainer` - It a default implementation for containers that automagically adjust their content in order to avoid keyboard. Use this if you need to implement a custom container.
+
+## How to make a custom container?
+
+Your custom container should look something like this
+
+```objective-c
+/// Subclass to UITextView that automatically adjusts its contentInset to avoid keyboard
+public class <Your class>: <Superclass>, KeyboardAvoidingContainer {
+    public var insets: UIEdgeInsets {
+        get { return <insets> }
+        set { <insets> = newValue }
+    }
+    public lazy var avoider: KeyboardAvoider = self.setupAvoider()
+    
+    override public func willMove(toWindow newWindow: UIWindow?) {
+        super.willMove(toWindow: newWindow)
+        onMove(to: newWindow)
+    }
+}
+```
