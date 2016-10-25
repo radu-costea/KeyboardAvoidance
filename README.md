@@ -32,7 +32,7 @@ Note: Make sure that you also specify the correct module for the custom class or
 Your custom container should look something like this
 
 ```swift
-/// Subclass to UITextView that automatically adjusts its contentInset to avoid keyboard
+/// Subclass that automatically adjusts its contentInset to avoid keyboard
 public class <#Your class#>: <#Superclass#>, KeyboardAvoidingContainer {
     public var insets: UIEdgeInsets {
         get { return <#insets#> }
